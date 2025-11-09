@@ -1,0 +1,4 @@
+.DS_Store
+test_pdfs/
+__pycache__/
+.env
