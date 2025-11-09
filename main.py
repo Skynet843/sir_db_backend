@@ -128,6 +128,11 @@ def search_voter(
         raise HTTPException(status_code=500, detail="Internal error") from e
 
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
+
 @app.get("/")
 def root():
     return {
